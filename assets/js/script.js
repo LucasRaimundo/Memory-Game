@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.card');
+let btnStart = document.getElementsByClassName('.btn');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
@@ -68,3 +69,6 @@ function resetBoard() {
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
 });
+
+
+
